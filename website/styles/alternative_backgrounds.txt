@@ -1,0 +1,12 @@
+<script src="ChaosWavesBg.min.js"></script>
+
+...
+
+<script src="ChaosWavesBg.js"></script>
+  <script>
+    let colorbg = new Color4Bg.ChaosWavesBg({
+      dom: "box",
+      colors: ["#c57282","#d6c5d8","#c1d1e7","#dedede","#d4c7d6","#9badbf"],
+      loop: true
+    });
+  </script>

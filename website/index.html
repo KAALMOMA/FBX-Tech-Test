@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>FBX | Home</title>
+        <link rel="icon" type="image/png" href="/website/images/fbx-logo-small.png" />
+        <link rel="stylesheet" href="/website/styles/styles.css" />
+        <script src="/website/scripts/RandomCubesBg.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Animated Background -->
+        <div id="box"></div>
+
+        <div class="home-desktop-1440-px">
+            
+            <div id="header"></div>
+
+
+            <!-- Hero Stack -->
+            <div class="stack-1">
+                <div class="hero-text">
+                    <div class="hero-text-main">
+                        <span class="hero-text-main">Empowering the Next Generation of </span>
+                        <span class="hero-text-stylized">Makers</span>
+                    </div>
+                    <div class="hero-text-sub">
+                        Robotics kits, 3D printers, and hands-on curricula to bring STEM learning to life.
+                    </div>
+                </div>
+                <img class="tools-graphic" src="/website/images/tools-graphic0.png" />
+            </div>
+
+
+            <!-- "What is FBX?" Stack -->
+            <div class="stack-2">
+                <div class="stack-2-main">What is FBX?</div>
+                <div class="stack-2-sub">
+                    FBX Technologies is a <b>STEM-focused company</b> dedicated to creating <b>accessible, high-quality tools</b> for <b>skills-based education.</b> We design and manufacture our own <b>robotics kits, 3D printers,</b> and
+                    <b>supporting curricula,</b> all built to inspire creativity and technical skills in students and educators alike. Each product is accompanied by a carefully tailored curriculum to provide a complete, project-driven
+                    learning experience- whether in the classroom, at home, or in a makerspace.
+                </div>
+                <a href="/website/pages/about.html" class="button-special2">About Us</a>
+            </div>
+
+
+            <!-- Shop Stack -->
+            <div class="stack">
+                <div class="text-frame">
+                    <div class="stack-main">Robotics Kits, 3D Printers, and the Parts to Build Them</div>
+                    <div class="stack-sub">Complete kits, high-quality printers, and individual parts- everything you need to repair and expand your STEM projects.</div>
+                    <div class="button-special2">Shop</div>
+                </div>
+                <div class="image-frame">
+                    <img class="robot-and-printer" src="/website/images/robot-and-printer0.png" />
+                </div>
+            </div>
+
+
+            <!-- Learn Stack -->
+            <div class="stack">
+                <div class="image-frame">
+                    <img class="git-note-book" src="/website/images/git-note-book0.png" />
+                </div>
+                <div class="text-frame">
+                    <div class="stack-main">Interactive Learning Backed by Step-by-Step Guides</div>
+                    <div class="stack-sub">Each FBX robotics kit and 3D printer comes with its own easy-to-follow, project-based lessons that make teaching and learning STEM concepts simple and effective.</div>
+                    <a class="button-special2" href="/website/pages/learn.html">Learn</a>
+                </div>
+            </div>
+
+
+            <!-- Contact Us Stack -->
+            <div class="stack-5">
+                <div class="stack-5-main">Interested in Working With Us?</div>
+                <div class="stack-5-sub">
+                    We’re always excited to collaborate with schools, educational programs, and organizations that share our mission of making STEM education more engaging and accessible. Whether you’re looking to bring robotics and 3D 
+                    printing into your classroom, or explore custom partnership opportunities, FBX Technologies is here to support your goals. Reach out to start a conversation- we’d love to hear how we can work together.
+                </div>
+                <a class="button-special2" href="/website/pages/general-inquiry.html">Contact Us</a>
+            </div>
+
+            <div id="footer"></div>
+
+        </div>
+
+
+        <!-- Animated Background Script -->
+        <script src="/website/scripts/RandomCubesBg.js"></script>
+        <script>
+            let colorbg = new Color4Bg.RandomCubesBg({
+                dom: "box",
+                colors: ["#dedede", "#d4d4d4", "#e8e8e8", "#ebebeb"],
+                loop: true,
+            });
+        </script>
+
+
+        <!-- Header, Footer, and other reused elements -->
+        <script src="/website/scripts/includes.js"></script>
+    </body>
+</html>

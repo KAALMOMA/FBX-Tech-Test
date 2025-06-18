@@ -1,0 +1,22 @@
+This is a living list of all of the optimization tasks/improvements that should be completed when possible.
+
+X   Consolidate as much of the repeated CSS as possible. 
+    There are many elements that have repeated styling, 
+    but can just share the same styling.
+
+*   Ensure that the site is actually responsive (test on different devices);
+    Consider porting site to REACT framework
+
+*   Modularize the Learn page to separate each course out 
+    into their own HTML file that is served using includes.js
+    -   Consider using JSON
+
+*   Ensure that all code is formatted consistently (ordering 
+    of attributes in CSS, indentation, etc.)
+
+X   Improve site architecture / organize files so they aren't 
+    all in the same subdirectory
+
+*   Add comments to aid in documentation
+
+*   Integrate HubSpot CMS

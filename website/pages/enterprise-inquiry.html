@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>FBX | Enterprise Inquiries</title>
+        <link rel="icon" type="image/png" href="/website/images/fbx-logo-small.png" />
+        <link rel="stylesheet" href="/website/styles/styles.css" />
+        <script src="/website/scripts/RandomCubesBg.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Animated Background -->
+        <div id="box"></div>
+
+        <div class="home-desktop-1440-px">
+            
+            <div id="header"></div>
+
+            <!-- Hero Stack -->
+            <div class="stack-11">
+                <div class="hero-text">
+                    <div class="hero-main">Enterprise Inquiries</div>
+                    <div class="hero-sub">Interested in partnering with us? Reach out to schedule a meeting and explore collaboration opportunities.</div>
+                </div>
+                <div class="image-frame">
+                    <img class="git-note-book-0" src="/website/images/git-note-book0.png" />
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <form id="enterprise-inquiry-form"></form>
+
+            <div id="footer"></div>
+
+        </div>
+
+        <!-- Animated Background Script -->
+        <script src="/website/scripts/RandomCubesBg.js"></script>
+        <script>
+            let colorbg = new Color4Bg.RandomCubesBg({
+                dom: "box",
+                colors: ["#dedede", "#d4d4d4", "#e8e8e8", "#ebebeb"],
+                loop: true,
+            });
+        </script>
+
+        <!-- Header, Footer, and other reused elements -->
+        <script src="/website/scripts/includes.js"></script>
+    </body>
+</html>
