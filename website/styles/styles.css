@@ -723,6 +723,12 @@ a {
     position: relative;
     overflow: hidden;
 }
+#courses-container {
+    padding: 30px 0px 60px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
 .course {
     backdrop-filter: blur(25px);
     border-radius: 20px;
