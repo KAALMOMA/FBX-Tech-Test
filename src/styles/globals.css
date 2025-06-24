@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100 opacity-0 transition-opacity ease-in-out;
+  }
+
+  body.fade-in {
+    @apply opacity-100;
+  }
+
+  a {
+    @apply no-underline text-inherit;
+  }
+}
+
+@layer components {
+  .home-desktop-1440-px {
+    @apply px-64 py-4 flex flex-col gap-4 items-center justify-start relative overflow-hidden;
+  }
+
+  .navigation {
+    @apply flex flex-row gap-2.5 items-center justify-center w-full self-stretch flex-shrink-0 relative;
+  }
+
+  .logo-area {
+    @apply p-1.5 px-2.5 flex flex-row gap-2.5 items-center justify-start flex-1 relative;
+  }
+
+  .fbx-logo {
+    @apply flex-shrink-0 w-12 h-10 relative object-cover;
+  }
+
+  .button-area {
+    @apply p-1.5 px-2.5 flex flex-row gap-5 items-center justify-start self-stretch flex-shrink-0 relative;
+  }
+
+  .button {
+    @apply p-1 flex flex-row gap-2.5 items-center justify-center flex-shrink-0 relative text-base text-gray-custom text-left font-inter font-bold transition-all duration-500 ease-out;
+  }
+
+  .button:hover {
+    @apply text-black cursor-pointer;
+  }
+
+  .sign-in-area {
+    @apply p-1.5 px-2.5 flex flex-row gap-2.5 items-center justify-end self-stretch flex-1 relative;
+  }
+
+  .button-special {
+    @apply bg-black rounded-full p-3 flex flex-row gap-2.5 items-center justify-center flex-shrink-0 w-20 relative overflow-hidden text-white font-inter text-base font-bold;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 102px;
+    height: 42px;
+  }
+
+  .button-special:hover {
+    @apply w-24 bg-primary cursor-pointer;
+    width: 116px;
+  }
+
+  .color-div-bar {
+    @apply bg-gradient-to-r from-primary via-primary-dark to-primary-light rounded-2xl flex flex-row gap-8 items-center justify-center self-stretch flex-shrink-0 h-2.5 relative overflow-hidden;
+  }
+
+  .stack-1 {
+    @apply px-8 py-32 pt-44 flex flex-row gap-8 items-center justify-center self-stretch flex-shrink-0 relative;
+  }
+
+  .hero-text {
+    @apply p-2.5 flex flex-col gap-4 items-start justify-center flex-1 relative;
+  }
+
+  .hero-text-main {
+    @apply text-left relative self-stretch text-black font-inter text-7xl leading-tight font-semibold;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 600;
+  }
+  
+  .text-stroke {
+    -webkit-text-stroke: 2px #000; /* Adjust width and color as needed */
+    text-stroke: 4px #000;         /* For future compatibility */
+  }
+
+  .hero-text-stylized {
+    @apply bg-gradient-to-l from-primary to-primary-dark bg-clip-text text-transparent font-lacquer text-7xl leading-tight font-normal;
+    font-family: 'Lacquer', system-ui, sans-serif !important;
+    line-height: 0.75;
+  }
+
+  .hero-text-sub {
+    @apply text-gray-custom text-left font-inter text-3xl font-bold relative self-stretch;
+  }
+
+  .tools-graphic {
+    @apply flex-1 w-1/2 relative object-cover;
+  }
+
+  .stack-2 {
+    @apply self-stretch;
+    background: rgba(194, 177, 196, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 50px 60px 50px 60px;
+    @apply flex flex-col gap-[15px] items-center justify-center relative;
+    box-shadow: 0px 12px 0px 0px rgba(100, 82, 102, 0.5);
+  }
+
+  .stack-2-main {
+    @apply text-black font-inter text-4xl font-bold relative;
+    padding: 10px;
+    font-family: "Inter-Black", sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 900;
+  }
+
+  .stack-2-sub {
+    @apply text-center font-inter text-lg relative w-full;
+    padding: 5px;
+    font-size: 25px;
+    color: #3d3d3d;
+  }
+
+  .button-special2 {
+    @apply bg-black rounded-full px-8 py-3 flex flex-row gap-2.5 items-center justify-center flex-shrink-0 relative overflow-hidden text-white font-inter text-base font-bold;
+    font-size: 20px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .button-special2:hover {
+    @apply bg-primary cursor-pointer;
+    transform: scale(1.1);
+  }
+
+  .stack {
+    @apply p-8 flex flex-row gap-8 items-center justify-center self-stretch flex-shrink-0 relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .text-frame {
+    @apply p-2.5 flex flex-col gap-4 items-start justify-center flex-1 relative;
+  }
+
+  .stack-main {
+    @apply text-black font-inter text-3xl font-bold relative self-stretch;
+    font-family: "Inter-Black", sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #3d3d3d;
+  }
+
+  .stack-sub {
+    @apply text-gray-custom font-inter text-lg relative self-stretch;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    color: #747474;
+  }
+
+  .image-frame {
+    @apply p-2.5 flex flex-row gap-2.5 items-center justify-center flex-1 relative;
+    flex: 0.7;
+  }
+
+  .robot-and-printer {
+    @apply flex-1 relative object-cover;
+  }
+
+  .git-note-book {
+    @apply flex-1 relative object-cover;
+  }
+
+  .stack-5 {
+    @apply p-8 flex flex-col gap-4 items-center justify-center self-stretch flex-shrink-0 relative;
+  }
+
+  .stack-5-main {
+    @apply text-black font-inter text-3xl font-bold relative;
+    font-family: "Inter-Black", sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #000000;
+  }
+
+  .stack-5-sub {
+    @apply text-gray-custom text-center font-inter text-lg relative max-w-7xl;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #3d3d3d;
+  }
+
+  .footer {
+    @apply w-full flex flex-row items-center justify-between p-8 relative;
+    backdrop-filter: blur(50px);
+  }
+
+  .footer-links {
+    @apply flex flex-row gap-8 items-center;
+  }
+
+  .social-media {
+    @apply flex flex-row gap-2.5 items-center;
+  }
+
+  .instagram, .facebook, .linked-in {
+    @apply flex-shrink-0 w-8 h-8 relative object-cover;
+  }
+
+  .footer-column {
+    @apply p-2.5 flex flex-col gap-2.5 items-start justify-center flex-shrink-0 relative;
+  }
+
+  .footer-bold {
+    @apply text-black font-inter text-base font-bold relative;
+  }
+
+  .footer-regular {
+    @apply text-gray-custom font-inter text-sm relative;
+  }
+
+  #box {
+    @apply fixed top-0 left-0 w-full h-full z-0;
+  }
+
+  .dropdown {
+    @apply relative inline-block;
+  }
+
+  .dropdown-content {
+    @apply hidden absolute z-10 min-w-48 shadow-lg rounded-md py-2;
+    background-color: #dedede;
+  }
+
+  .dropdown-content a {
+    @apply block px-4 py-2 text-gray-custom;
+    font-weight: 400;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: left;
+  }
+
+  .dropdown:hover .dropdown-content {
+    @apply block;
+  }
+
+  .dropdown-content a:hover {
+    transform: scale(1.075);
+    color: #000;
+  }
+
+  /* About page specific styles */
+  .stack-7 {
+    @apply p-8 flex flex-row gap-1 items-center justify-center self-stretch flex-shrink-0 relative;
+  }
+
+  .stack-7-text {
+    @apply text-gray-custom font-inter text-lg relative flex-1;
+    font-size: 23px;
+    line-height: 36px;
+    flex: 0.7;
+    color: #3d3d3d;
+  }
+
+  .funbotics-img {
+    @apply flex-1 relative object-cover;
+    height: 400px;
+  }
+
+  .stack-8 {
+    @apply p-8 flex flex-col gap-4 items-center justify-center self-stretch flex-shrink-0 relative;
+  }
+
+  .stack-8-text {
+    @apply text-gray-custom font-inter text-lg relative max-w-7xl text-center;
+    font-size: 23px;
+    line-height: 36px;
+    flex: 1;
+    color: #3d3d3d;
+  }
+
+  .stack-9 {
+    @apply p-8 flex flex-row gap-8 items-center justify-center self-stretch flex-shrink-0 relative;
+    padding-top: 0px;
+  }
+
+  .stack-9-text {
+    @apply text-gray-custom font-inter text-lg relative flex-1;
+    font-size: 23px;
+    line-height: 36px;
+    flex: 1;
+    color: #3d3d3d;
+  }
+
+  .about-us-img {
+    @apply flex-1 relative object-cover;
+  }
+
+  .stack-10 {
+    @apply p-8 flex flex-row gap-10 items-center justify-center flex-shrink-0 relative max-w-7xl;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .pranav-photo {
+    @apply flex-shrink-0 w-48 h-48 relative object-cover;
+  }
+
+  .stack-10-quote {
+    @apply p-2.5 flex flex-col gap-4 items-start justify-center flex-1 relative;
+  }
+
+  .stack-10-main-text {
+    @apply font-inter text-2xl relative italic;
+    color: #3d3d3d;
+  }
+
+  .stack-10-quote-credit {
+    @apply p-2.5 flex flex-row gap-2.5 items-center justify-start flex-shrink-0 relative;
+  }
+
+  .stack-10-main-credit {
+    @apply p-2.5 flex flex-col gap-2.5 items-start justify-center flex-shrink-0 relative;
+  }
+
+  .stack-10-main-credit-span2 {
+    @apply text-black font-inter text-lg font-bold relative;
+  }
+
+  .stack-10-main-credit-span3 {
+    @apply text-gray-custom font-inter text-base relative;
+    line-height: 5px;
+    font-style: italic;
+  }
+
+  .stack-11 {
+    @apply p-8 flex flex-row gap-8 items-center justify-center self-stretch flex-shrink-0 relative;
+  }
+
+  .hero-main {
+    @apply text-black font-inter text-5xl font-bold relative self-stretch;
+    font-family: "Inter-Black", sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #000000;
+  }
+
+  .hero-sub {
+    @apply text-gray-custom font-inter text-xl relative self-stretch;
+  }
+
+  /* Form styles */
+  .contact-form {
+    @apply w-full max-w-2xl flex flex-col gap-6;
+  }
+
+  .short-input-format {
+    @apply flex flex-col gap-2;
+  }
+
+  .long-input-format {
+    @apply flex flex-col gap-2;
+  }
+
+  .input-field-text-preview {
+    @apply text-gray-custom font-inter text-sm font-semibold;
+  }
+
+  .form-input {
+    @apply px-4 py-3 border border-gray-300 rounded-lg font-inter text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+
+  .form-textarea {
+    @apply px-4 py-3 border border-gray-300 rounded-lg font-inter text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+
+  .form-submit-area {
+    @apply flex flex-row gap-4 items-center;
+  }
+
+  .success-message {
+    @apply mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg font-inter text-sm;
+  }
+
+  .error-message {
+    @apply mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg font-inter text-sm;
+  }
+
+  /* --- Learn Page / Course Tile Styles --- */
+  #courses-container {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-[60px] py-[30px] pb-[60px];
+    width: 100%;
+  }
+
+  .course {
+    @apply flex flex-col gap-[10px] justify-center p-[15px] rounded-[20px] relative overflow-hidden shadow-[0_12px_0_0_rgba(116,116,116,1)];
+    backdrop-filter: blur(20px);
+    background: transparent;
+    box-shadow: 0px 4px 30px 0px rgba(62, 62, 62, 0.20);
+  }
+
+  .course-title {
+    @apply flex flex-row gap-[10px] items-stretch justify-start flex-shrink-0 relative overflow-hidden;
+  }
+
+  .course-anchor {
+    @apply text-black text-left gap-[10px] font-black font-inter text-[30px] relative inline-flex items-center;
+  }
+
+  .icon-external-link {
+    @apply w-[20px] h-[20px] flex-shrink-0 relative align-middle;
+  }
+
+  .course-subtitle {
+    @apply text-[#3d3d3d] text-left font-semibold font-inter text-[20px] relative;
+  }
+
+  .color-div-small {
+    background: linear-gradient(90deg, rgba(128,0,23,1) 0%, rgba(23,57,161,1) 50%, rgba(171,153,173,1) 100%);
+    border-radius: 20px;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .subsection {
+    @apply text-black text-left font-bold font-inter text-[25px] relative;
+  }
+
+  .modules {
+    @apply flex flex-col gap-0 items-start justify-start flex-shrink-0 relative overflow-hidden pb-[15px];
+    align-items: normal;
+  }
+
+  .module {
+    @apply flex flex-row gap-[10px] items-stretch justify-start flex-shrink-0 relative overflow-hidden p-[10px] transition-all duration-200 cursor-pointer rounded-[12px] w-full block;
+  }
+
+  .module:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .gear {
+    @apply w-[32px] h-[32px] flex-shrink-0 relative object-cover align-middle;
+  }
+
+  .module-title {
+    @apply text-[#3d3d3d] text-left font-semibold font-inter text-[20px] flex-1 flex items-center justify-start relative transition-all duration-200;
+  }
+
+  .module-title:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  /* Supplementary Material Section */
+  .stack-13 {
+    @apply flex flex-row gap-[30px] items-center justify-center self-stretch flex-shrink-0 relative overflow-hidden p-[30px] rounded-[20px] shadow-[0_12px_0_0_rgba(100,82,102,1)];
+    background: #c2b1c4;
+  }
+  .supplementary-material {
+    @apply text-black text-center font-black font-inter text-[35px] leading-[65px] relative;
+    width: 591px;
+  }
+  .stack-14 {
+    @apply flex flex-row gap-[15px] items-start justify-center self-stretch flex-shrink-0 relative overflow-hidden px-[15px] py-[60px];
+  }
+  .coming-soon {
+    @apply text-[#747474] text-center font-semibold font-inter text-[25px] leading-[65px] relative;
+  }
+} 
