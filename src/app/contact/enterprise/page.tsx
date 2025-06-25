@@ -60,7 +60,7 @@ export default function EnterpriseInquiry() {
         {/* Hero Stack */}
         <div className="stack-11" style={{padding: '150px 30px 90px 30px'}}>
           <div className="hero-text">
-            <div className="hero-main" style={{fontSize: '70px', lineHeight: '60px', fontWeight: '900'}}>Enterprise Inquiries</div>
+            <div className="hero-main" style={{fontSize: '70px', lineHeight: '70px', fontWeight: '900'}}>Enterprise Inquiries</div>
             <div className="hero-sub" style={{fontSize: '30px', lineHeight: '36px', fontWeight: '800', color: '#3d3d3d'}}>Interested in partnering with us? Reach out to schedule a meeting and explore collaboration opportunities.</div>
           </div>
           <div className="image-frame">
